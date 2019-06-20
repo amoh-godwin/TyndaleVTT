@@ -1,11 +1,22 @@
 import QtQuick 2.12
 
-QtObject {
     ListModel {
         ListElement {
             time: "10:00 - 10:01"
-            text: "The light of God is upon me"
+            content: "The light of God is upon me"
             seconds: 1
         }
+
+        ListElement {
+            time: "10:00 - 10:01"
+            content: "The light of God is upon me"
+            seconds: 1
+        }
+
+        ListElement {
+            time: "10:00 - 10:01"
+            content: "The light of God is upon me"
+            seconds: 1
+        }
+
     }
-}

@@ -20,10 +20,11 @@ ApplicationWindow {
             Layout.fillHeight: true
             color: "dodgerblue"
 
-            Image {
-                sourceSize.width: parent.width
-                sourceSize.height: parent.height
-                source: current_frame
+            Text {
+                anchors.centerIn: parent
+                text: "Boiler Plate"
+                font.pixelSize: 32
+                color: "orange"
             }
 
 
@@ -32,6 +33,13 @@ ApplicationWindow {
         Rectangle {
             Layout.preferredWidth: 400
             Layout.fillHeight: true
+
+            ListView {
+                anchors.fill: parent
+                model: SubtitleModelTemplate {}
+                delegate: SubtitleDelegate {}
+            }
+
         }
 
     }
